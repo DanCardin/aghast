@@ -1,0 +1,20 @@
+[package]
+name = "aghast"
+python-versions = "3.6"
+version = "0.0.1"
+description = "Aghast tokenizes and parses your python source code to provide linting!"
+include = { from = 'src', include = '**/*', as = 'aghast' }
+
+authors = ["Dan Cardin <ddcardin@gmail.com>"]
+homepage = "https://github.com/dancardin/aghast"
+repository = "https://github.com/dancardin/aghast"
+keywords = ['linting', 'ast']
+license = "Apache 2.0"
+readme = 'README.md'
+
+[dependencies]
+dataclasses = "0.4"
+
+[dev-dependencies]
+pytest-cov = "^2.5"
+pytest = "^3.4"
